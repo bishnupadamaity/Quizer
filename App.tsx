@@ -1,11 +1,12 @@
-import {View, Text} from 'react-native';
 import React from 'react';
+import Main from './src/components/Main';
+import {NativeBaseProvider} from 'native-base';
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <NativeBaseProvider>
+      <Main />
+    </NativeBaseProvider>
   );
 };
 
